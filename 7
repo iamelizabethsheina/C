@@ -1,0 +1,19 @@
+#include <stdio.h>
+
+int main() {
+    int n, zeros = 0, positive = 0, negative = 0;
+    scanf("%d", &n);
+    for (int i = 0; i < n; i++) {
+        int num;
+        scanf("%d", &num);
+        if (num == 0) {
+            zeros++;
+        } else if (num > 0) {
+            positive++;
+        } else {
+            negative++;
+        }
+    }
+    printf("%d %d %d\n", zeros, positive, negative);
+    return 0;
+}
